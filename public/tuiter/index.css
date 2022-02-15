@@ -1,0 +1,12 @@
+:root {
+    --tuiter-bg-color: black;
+    --tuiter-search-bar-bg-color: rgb(47, 51, 54);
+    --tuiter-text-color-default: white;
+    --tuiter-active-explore-link-color: rgb(29, 161, 242);
+    --tuiter-explore-link-color: rgb(110, 118, 125);
+}
+
+* {
+    background: var(--tuiter-bg-color);
+    font-family: Helvetica, sans-serif;
+}
