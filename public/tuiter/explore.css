@@ -1,80 +1,118 @@
-@import url("index.css");
-
-.wd-explore-search-container {
-    margin-bottom: 20px;
-    overflow: hidden;
+:root {
+    --wd-active-color: rgb(29, 161, 242);
+    --wd-tuit-details-color: rgb(110, 118, 125);
+    --wd-explore-link-color: var(--wd-tuit-details-color);
 }
 
-.wd-explore-search-bar {
-    width: 65%;
-    margin-left: 2px;
+.wd-explore-search-and-settings {
+    width: 100%;
+    display: table;
+}
+
+.wd-search-tuiter {
     float: left;
-    display: block;
-    overflow: hidden;
-    border-radius: 5px;
 }
 
-.wd-explore-search-bar > #explore-search-bar {
-    padding: 10px 0px;
+.wd-explore-settings-hl {
+    float: right;
+    font-size: 20px;
+}
+
+.wd-search-tuiter {
+    width: 30%;
+}
+
+#search-tuiter-input {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #333;
+    padding: 6px 12px;
+    border-radius: 10px;
     width: 100%;
 }
 
-.wd-explore-settings-link {
-    width: 34%;
-    float: right;
-    text-align: right;
-}
-
-.wd-explore-settings-link > a {
-    margin-right: 12px;
-}
-
-#explore-search-bar {
-    width: fit-content;
-    border: none;
-    background-color: var(--tuiter-search-bar-bg-color);
-    padding: 5px 10px;
-}
-
-#explore-search-bar:focus {
+#search-tuiter-input:focus {
     outline: none;
 }
 
-.wd-explore-tabs {
-    clear: both;
+#explore-settings-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+    float: right;
 }
 
-a.wd-explore-tab-item {
-    text-decoration: none;
-    color: var(--tuiter-text-color-default);
-    font-size: 15px;
+.wd-explore-nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.wd-explore-nav > li {
+    display: inline-block;
     padding: 16px;
 }
 
-.wd-active-explore-tab {
-    color: var(--tuiter-active-explore-link-color) !important;
-    font-weight: bold;
+.wd-explore-nav > li.wd-active {
+    border-bottom: 3px var(--wd-active-color) solid;
 }
 
-.wd-suggested-posts {
+.wd-explore-link {
+    color: var(--wd-explore-link-color);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.wd-active {
+    color: var(--wd-active-color);
+}
+
+.wd-explore-sug-posts {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+    display: block;
 }
 
-.wd-suggested-posts > li.wd-suggested-post-item {
-    margin: 15px 0px;
-    overflow: hidden;
-    min-height: 100px;
+.wd-explore-sug-posts > li {
+    margin: 20px 0px;
+    padding: 0;
+    overflow: auto;
 }
 
-img.wd-author-image {
-    width: 12px;
-    height: 12px;
+.wd-sug-post-info {
+    float: left;
+}
+
+.wd-sug-post-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    float: right;
+    border-radius: 10px;
+}
+
+.wd-sug-post-author-avatar {
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
 }
 
-img.wd-suggested-post-content-img {
-    height: 100px;
-    width: 100px;
-    float: right;
-    margin-right: 15px;
+.wd-sug-post-topic,
+.wd-sug-post-tuits {
+    font-size: 13px;
+    color: var(--wd-tuit-details-color);
+}
+
+.wd-sug-post-title {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-highlighted-contributor {
+    color: lightgray;
+    font-size: 15px;
 }

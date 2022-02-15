@@ -62,6 +62,7 @@
     width: fit-content;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-bottom: 12px;
 }
 
 .wd-tuit-auxiliary-content > img.wd-tuit-linked-article-img {
@@ -93,17 +94,13 @@
     color: lightgrey;
 }
 
-.wd-tuit-outreach-data {
-    margin-top: 12px;
-}
-
-.wd-tuit-outreach-data > span {
+.wd-tuit-outreach-data > a > span {
     padding: 0px 20px;
     font-size: 15px;
     color: lightgrey;
 }
 
-.wd-tuit-outreach-data .wd-tuit-likes {
+.wd-tuit-outreach-data .wd-tuit-likes > * {
     color: red;
 }
 
@@ -113,4 +110,8 @@
 
 .wd-tuit-outreach-data-value {
     margin-left: 6px;
+}
+
+.wd-tuit-outreach-data > a {
+    text-decoration: none;
 }
