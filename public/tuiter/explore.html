@@ -16,12 +16,12 @@
         <div class="container mt-2">
             <div class="row">
                 <div
-                    class="wd-explore-side-nav col-3 col-md-2 col-lg-1 col-xl-3 text-center text-xl-start"
+                    class="wd-explore-side-nav col-2 col-md-2 col-lg-1 col-xl-3 text-center text-xl-start"
                 >
                     <div class="list-group">
-                        <a class="list-group-item">
+                        <div class="list-group-item">
                             <i class="fab fa-twitter"></i>
-                        </a>
+                        </div>
                         <a
                             class="list-group-item list-group-item-action"
                             href="#"
@@ -85,9 +85,7 @@
                         Tweet
                     </button>
                 </div>
-                <div
-                    class="wd-explore-main-content col-9 col-md-10 col-lg-7 col-xl-6"
-                >
+                <div class="wd-explore-main-content col-10 col-lg-7 col-xl-6">
                     <div class="input-group wd-tuiter-search-container row">
                         <div class="col-11">
                             <input
@@ -123,7 +121,7 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Sports</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-md-block">
                                 <a href="#" class="nav-link">Entertainment</a>
                             </li>
                         </ul>
@@ -272,22 +270,21 @@
                     </div>
                 </div>
                 <div
-                    class="wd-explore-who-to-follow col-3 col-lg-3 col-xl-3 d-none d-lg-block"
+                    class="wd-explore-who-to-follow col-3 col-lg-4 col-xl-3 d-none d-lg-block"
                 >
                     <ul class="list-group">
                         <li class="list-group-item wd-who-to-follow-header">
                             Who to follow
                         </li>
-                        <li
-                            class="list-group-item d-flex flex-row justify-content-between"
-                        >
-                            <div class="d-flex flex-row">
+                        <li class="list-group-item">
+                            <div class="float-start d-flex">
                                 <img
                                     src="./assets/java-logo.jpg"
-                                    alt=""
                                     class="wd-explore-who-to-follow-profile-image"
                                 />
-                                <div>
+                                <div
+                                    class="wd-who-to-follow-user-details ps-xl-2"
+                                >
                                     <div
                                         class="wd-explore-who-to-follow-display-name"
                                     >
@@ -302,24 +299,19 @@
                             </div>
 
                             <button
-                                class="btn-sm btn-primary wd-follow-button-who-to-follow"
+                                class="btn-sm btn-primary wd-follow-button-who-to-follow float-end"
                             >
                                 Follow
                             </button>
                         </li>
-                        <li
-                            class="list-group-item d-flex flex-row justify-content-between"
-                        >
-                            <div
-                                class="wd-explore-who-to-follow-account-container d-flex"
-                            >
+                        <li class="list-group-item">
+                            <div class="float-start d-flex">
                                 <img
                                     src="./assets/relativity-space-logo.jpg"
-                                    alt="relativity space logo"
                                     class="wd-explore-who-to-follow-profile-image"
                                 />
                                 <div
-                                    class="wd-explore-who-to-follow-account-info"
+                                    class="wd-who-to-follow-user-details ps-xl-2"
                                 >
                                     <div
                                         class="wd-explore-who-to-follow-display-name"
@@ -334,15 +326,100 @@
                                     </div>
                                 </div>
                             </div>
+
                             <button
-                                class="btn-sm btn-primary wd-follow-button-who-to-follow"
+                                class="btn-sm btn-primary wd-follow-button-who-to-follow float-end"
                             >
                                 Follow
                             </button>
                         </li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
+                        <li class="list-group-item">
+                            <div class="float-start d-flex">
+                                <img
+                                    src="./assets/virgin_galactic.jpg"
+                                    class="wd-explore-who-to-follow-profile-image"
+                                />
+                                <div
+                                    class="wd-who-to-follow-user-details ps-xl-2"
+                                >
+                                    <div
+                                        class="wd-explore-who-to-follow-display-name"
+                                    >
+                                        Virgin Galactic
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div
+                                        class="wd-explore-who-to-follow-handle"
+                                    >
+                                        @virgingalactic
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                class="btn-sm btn-primary wd-follow-button-who-to-follow float-end"
+                            >
+                                Follow
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="float-start d-flex">
+                                <img
+                                    src="./assets/nasa-logo.jpg"
+                                    class="wd-explore-who-to-follow-profile-image"
+                                />
+                                <div
+                                    class="wd-who-to-follow-user-details ps-xl-2"
+                                >
+                                    <div
+                                        class="wd-explore-who-to-follow-display-name"
+                                    >
+                                        NASA
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div
+                                        class="wd-explore-who-to-follow-handle"
+                                    >
+                                        @NASA
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                class="btn-sm btn-primary wd-follow-button-who-to-follow float-end"
+                            >
+                                Follow
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="float-start d-flex">
+                                <img
+                                    src="./assets/tesla-logo.png"
+                                    class="wd-explore-who-to-follow-profile-image"
+                                />
+                                <div
+                                    class="wd-who-to-follow-user-details ps-xl-2"
+                                >
+                                    <div
+                                        class="wd-explore-who-to-follow-display-name"
+                                    >
+                                        Tesla
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div
+                                        class="wd-explore-who-to-follow-handle"
+                                    >
+                                        @Tesla
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                class="btn-sm btn-primary wd-follow-button-who-to-follow float-end"
+                            >
+                                Follow
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
