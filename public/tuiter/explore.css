@@ -1,118 +1,61 @@
-:root {
-    --wd-active-color: rgb(29, 161, 242);
-    --wd-tuit-details-color: rgb(110, 118, 125);
-    --wd-explore-link-color: var(--wd-tuit-details-color);
+.wd-explore-side-nav {
+    font-weight: bold;
 }
 
-.wd-explore-search-and-settings {
-    width: 100%;
-    display: table;
-}
-
-.wd-search-tuiter {
-    float: left;
-}
-
-.wd-explore-settings-hl {
-    float: right;
-    font-size: 20px;
-}
-
-.wd-search-tuiter {
-    width: 30%;
-}
-
-#search-tuiter-input {
-    text-decoration: none;
-    outline: none;
-    border: none;
-    color: white;
-    background-color: #333;
-    padding: 6px 12px;
-    border-radius: 10px;
+.wd-tuit-button {
+    border-radius: 15px;
     width: 100%;
 }
 
-#search-tuiter-input:focus {
-    outline: none;
+.wd-tuiter-search-bar {
+    border-radius: 15px;
 }
 
-#explore-settings-link {
+.wd-tuiter-settings-icon {
+    text-align: center;
+}
+
+.wd-explore-main-content-highlighted-tuit {
+    position: relative;
+}
+
+.wd-explore-main-content-image-text-overlay {
+    position: absolute;
     color: white;
-    text-decoration: none;
-    margin-right: 12px;
-    float: right;
+    font-weight: bold;
+    bottom: 0px;
+    left: 10px;
 }
 
-.wd-explore-nav {
-    margin: 0;
-    padding: 0;
-    margin-top: 12px;
+.wd-explore-main-content-image {
+    width: 100%;
 }
 
-.wd-explore-nav > li {
-    display: inline-block;
-    padding: 16px;
+.wd-explore-main-content-other-tuits {
 }
 
-.wd-explore-nav > li.wd-active {
-    border-bottom: 3px var(--wd-active-color) solid;
+.wd-who-to-follow-header {
+    font-weight: bold;
 }
 
-.wd-explore-link {
-    color: var(--wd-explore-link-color);
-    text-decoration: none;
-    font-size: 15px;
+.wd-explore-who-to-follow > ul > li {
+    font-size: 13px;
 }
 
-.wd-active {
-    color: var(--wd-active-color);
-}
-
-.wd-explore-sug-posts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 12px;
-    display: block;
-}
-
-.wd-explore-sug-posts > li {
-    margin: 20px 0px;
-    padding: 0;
-    overflow: auto;
-}
-
-.wd-sug-post-info {
-    float: left;
-}
-
-.wd-sug-post-img {
-    width: 100px;
-    height: 100px;
-    margin-right: 16px;
-    float: right;
-    border-radius: 10px;
-}
-
-.wd-sug-post-author-avatar {
-    width: 16px;
-    height: 16px;
+.wd-explore-who-to-follow-profile-image {
+    width: 32px;
+    height: 32px;
     border-radius: 100%;
 }
 
-.wd-sug-post-topic,
-.wd-sug-post-tuits {
-    font-size: 13px;
-    color: var(--wd-tuit-details-color);
+.wd-explore-who-to-follow-display-name {
+    font-weight: bold;
 }
 
-.wd-sug-post-title {
-    font-size: 15px;
-    color: lightgray;
+.wd-follow-button-who-to-follow {
+    border-radius: 20px;
 }
 
-.wd-highlighted-contributor {
-    color: lightgray;
-    font-size: 15px;
+.wd-explore-who-to-follow-account-info {
+    font-size: 12px;
 }
