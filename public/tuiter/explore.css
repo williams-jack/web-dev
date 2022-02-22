@@ -1,3 +1,9 @@
+:root {
+    --wd-active-color: rgb(29, 161, 242);
+    --wd-tuit-details-color: rgb(110, 118, 125);
+    --wd-explore-link-color: var(--wd-tuit-details-color);
+}
+
 .wd-explore-side-nav {
     font-weight: bold;
 }
@@ -46,6 +52,33 @@
     width: 32px;
     height: 32px;
     border-radius: 100%;
+}
+
+.wd-tuit-text-bold {
+    font-weight: bold;
+}
+
+.wd-tuit-text-small {
+    font-size: 13px;
+}
+
+.wd-tuit-text-reg {
+    font-size: 15px;
+}
+
+.wd-tuit-details {
+    color: var(--wd-tuit-details-color);
+}
+
+.wd-tuiter-important-text {
+    font-weight: bold;
+    color: black;
+}
+
+.wd-tuit-associated-photo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 15px;
 }
 
 .wd-explore-who-to-follow-display-name {
