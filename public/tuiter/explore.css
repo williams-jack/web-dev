@@ -13,8 +13,16 @@
     width: 100%;
 }
 
+.wd-tuiter-search-container {
+    width: 90%;
+}
+
+.wd-search-add-on {
+    border-radius: 20px;
+}
+
 .wd-tuiter-search-bar {
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .wd-tuiter-settings-icon {
