@@ -1,6 +1,5 @@
 import React from "react";
 
-// TODO: See if 'wd-primary-active' is necessary.
 const NavigationSidebar = ({ active = "explore" }) => {
     return (
         <div className="col-2 col-md-2 col-lg-1 col-xl-2">
@@ -15,7 +14,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-home"></i>
+                    <i className="fa fa-home"></i>&nbsp;
                     <span className="d-none d-xl-inline">Home</span>
                 </a>
                 <a
@@ -25,7 +24,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-hashtag"></i>
+                    <i className="fa fa-hashtag"></i>&nbsp;
                     <span className="d-none d-xl-inline">Explore</span>
                 </a>
                 <a
@@ -35,7 +34,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-bell"></i>
+                    <i className="fa fa-bell"></i>&nbsp;
                     <span className="d-none d-xl-inline">Notifications</span>
                 </a>
                 <a
@@ -45,7 +44,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-envelope"></i>
+                    <i className="fa fa-envelope"></i>&nbsp;
                     <span className="d-none d-xl-inline">Messages</span>
                 </a>
                 <a
@@ -55,7 +54,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-bookmark"></i>
+                    <i className="fa fa-bookmark"></i>&nbsp;
                     <span className="d-none d-xl-inline">Bookmarks</span>
                 </a>
                 <a
@@ -65,7 +64,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-list"></i>
+                    <i className="fa fa-list"></i>&nbsp;
                     <span className="d-none d-xl-inline">Lists</span>
                 </a>
                 <a
@@ -75,7 +74,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fa fa-user"></i>
+                    <i className="fa fa-user"></i>&nbsp;
                     <span className="d-none d-xl-inline">Profile</span>
                 </a>
                 <a
@@ -85,7 +84,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     }`}
                     href="#"
                 >
-                    <i className="fas fa-ellipsis-h"></i>
+                    <i className="fas fa-ellipsis-h"></i>&nbsp;
                     <span className="d-none d-xl-inline">More</span>
                 </a>
             </div>

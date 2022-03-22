@@ -22,8 +22,8 @@ const PostSummaryListItem = ({
                     {post.userName && post.userName !== "" && (
                         <div class="wd-tuit-text-small">
                             <span class="wd-tuit-text-bold">
-                                {post.userName}
-                                <i class="fas fa-check-circle"></i>
+                                {post.userName}&nbsp;
+                                <i class="fas fa-check-circle"></i>&nbsp;
                             </span>
                             <span class="wd-tuit-details">- {post.time}</span>
                         </div>
