@@ -1,14 +1,10 @@
 import React from "react";
-import "./explore.css";
-import NavigationSidebar from "./NavigationSidebar";
-import WhoToFollowList from "./WhoToFollowList";
-import ExploreComponent from "./ExploreScreen/explore-component";
+import ExploreScreen from "./ExploreScreen";
+
 const Tuiter = () => {
     return (
-        <div className="row mt-2">
-            <NavigationSidebar active="explore" />
-            <ExploreComponent />
-            <WhoToFollowList />
+        <div>
+            <ExploreScreen />
         </div>
     );
 };
