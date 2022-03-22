@@ -1,0 +1,108 @@
+:root {
+    --wd-active-color: rgb(29, 161, 242);
+    --wd-tuit-details-color: rgb(110, 118, 125);
+    --wd-explore-link-color: var(--wd-tuit-details-color);
+}
+
+.wd-explore-side-nav {
+    font-weight: bold;
+}
+
+.wd-tuit-button {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.wd-tuiter-search-container {
+    width: 90%;
+}
+
+.wd-search-add-on {
+    border-radius: 20px;
+}
+
+.wd-tuiter-search-bar {
+    border-radius: 20px;
+}
+
+.wd-tuiter-settings-icon {
+    text-align: center;
+}
+
+.wd-explore-main-content-highlighted-tuit {
+    position: relative;
+}
+
+.wd-explore-main-content-image-text-overlay {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 0px;
+    left: 10px;
+}
+
+.wd-explore-main-content-image {
+    width: 100%;
+}
+
+.wd-explore-main-content-other-tuits {
+}
+
+.wd-who-to-follow-header {
+    font-weight: bold;
+}
+
+.wd-explore-who-to-follow > ul > li {
+    font-size: 13px;
+}
+
+.wd-explore-who-to-follow-profile-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.wd-tuit-text-bold {
+    font-weight: bold;
+}
+
+.wd-tuit-text-small {
+    font-size: 13px;
+}
+
+.wd-tuit-text-reg {
+    font-size: 15px;
+}
+
+.wd-tuit-details {
+    color: var(--wd-tuit-details-color);
+}
+
+.wd-tuiter-important-text {
+    font-weight: bold;
+    color: black;
+}
+
+.wd-tuit-associated-photo {
+    max-width: 75px;
+    max-height: 75px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.wd-explore-who-to-follow-display-name {
+    font-weight: bold;
+}
+
+.wd-follow-button-who-to-follow {
+    border-radius: 20px;
+}
+
+.wd-explore-who-to-follow-account-info {
+    font-size: 12px;
+}
+
+.fa-check-circle {
+    padding: 0px 2px;
+}

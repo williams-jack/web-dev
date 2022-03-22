@@ -1,12 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import "./explore.css";
+import NavigationSidebar from "./NavigationSidebar";
+import WhoToFollowList from "./WhoToFollowList";
+import ExploreComponent from "./ExploreScreen/explore-component";
 const Tuiter = () => {
     return (
-        <>
-            <h1>Tuiter</h1>
-            <Link to="/hello">Hello</Link> |<Link to="/">Labs</Link>
-        </>
+        <div className="row mt-2">
+            <NavigationSidebar active="explore" />
+            <ExploreComponent />
+            <WhoToFollowList />
+        </div>
     );
 };
 
