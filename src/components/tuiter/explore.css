@@ -62,27 +62,6 @@
     border-radius: 100%;
 }
 
-.wd-tuit-text-bold {
-    font-weight: bold;
-}
-
-.wd-tuit-text-small {
-    font-size: 13px;
-}
-
-.wd-tuit-text-reg {
-    font-size: 15px;
-}
-
-.wd-tuit-details {
-    color: var(--wd-tuit-details-color);
-}
-
-.wd-tuiter-important-text {
-    font-weight: bold;
-    color: black;
-}
-
 .wd-tuit-associated-photo {
     max-width: 75px;
     max-height: 75px;

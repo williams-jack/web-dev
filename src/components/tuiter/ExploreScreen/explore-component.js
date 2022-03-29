@@ -3,7 +3,7 @@ import PostSummaryList from "../PostSummaryList";
 
 const ExploreComponent = ({ active = "for you" }) => {
     return (
-        <div className="col-10 col-lg-7 col-xl-6">
+        <div>
             <div className="d-flex justify-content-between">
                 <div className="input-group wd-tuiter-search-container">
                     <span className="input-group-text bg-white text-dark wd-search-add-on">
