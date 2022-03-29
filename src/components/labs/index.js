@@ -10,10 +10,6 @@ const Labs = () => {
         <div>
             <h1>Labs</h1>
             <ReduxExamples />
-            <TodoList />
-            <ConditionalOutput />
-            <Styles />
-            <Classes />
             <br />
             <hr />
             <span>
