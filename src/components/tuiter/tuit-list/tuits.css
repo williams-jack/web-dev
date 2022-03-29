@@ -1,0 +1,13 @@
+.wd-tuit-avatar-image {
+    max-width: 48px;
+    border-radius: 10px;
+}
+
+.wd-tuit-attached-image {
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.wd-tuit-delete-icon {
+    font-size: 18px;
+}

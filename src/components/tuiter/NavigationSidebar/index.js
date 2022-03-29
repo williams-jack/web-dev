@@ -1,8 +1,9 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const NavigationSidebar = ({ active = "explore" }) => {
     return (
-        <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+        <>
             <div className="list-group">
                 <div className="list-group-item">
                     <i className="fab fa-twitter"></i>
@@ -96,7 +97,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     Tweet
                 </a>
             </div>
-        </div>
+        </>
     );
 };
 export default NavigationSidebar;
