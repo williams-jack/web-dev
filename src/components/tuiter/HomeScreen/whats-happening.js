@@ -13,7 +13,7 @@ const WhatsHappening = () => {
         <div className="form-group row mb-2">
             <div className="col-10">
                 <textarea
-                    value={whatsHappening}
+                    value={whatsHappening.tuit}
                     onChange={(event) =>
                         setWhatsHappening({
                             ...whatsHappening,

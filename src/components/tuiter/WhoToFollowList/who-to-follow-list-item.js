@@ -9,22 +9,22 @@ const WhoToFollowListItem = ({
     },
 }) => {
     return (
-        <li class="list-group-item">
-            <div class="float-start d-flex">
+        <li className="list-group-item">
+            <div className="float-start d-flex">
                 <img
                     src={who.avatarIcon}
-                    class="wd-explore-who-to-follow-profile-image"
+                    className="wd-explore-who-to-follow-profile-image"
                 />
-                <div class="wd-who-to-follow-user-details ps-xl-2">
-                    <div class="wd-explore-who-to-follow-display-name">
-                        {who.userName} <i class="fas fa-check-circle"></i>
+                <div className="wd-who-to-follow-user-details ps-xl-2">
+                    <div className="wd-explore-who-to-follow-display-name">
+                        {who.userName} <i className="fas fa-check-circle"></i>
                     </div>
-                    <div class="wd-explore-who-to-follow-handle">
+                    <div className="wd-explore-who-to-follow-handle">
                         @{who.handle}
                     </div>
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary wd-follow-button-who-to-follow float-end">
+            <button className="btn btn-sm btn-primary wd-follow-button-who-to-follow float-end">
                 Follow
             </button>
         </li>

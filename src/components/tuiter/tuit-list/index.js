@@ -8,7 +8,9 @@ import { findAllTuits } from "../actions/tuits-actions";
 const TuitList = () => {
     const tuits = useSelector((state) => state.tuits);
     const dispatch = useDispatch();
-    useEffect(findAllTuits(dispatch), []);
+    useEffect(() => {
+        findAllTuits(dispatch);
+    }, [dispatch]);
     return (
         <ul className="list-group">
             {tuits.map((tuit) => {

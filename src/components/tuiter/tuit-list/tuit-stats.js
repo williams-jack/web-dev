@@ -12,24 +12,39 @@ const TuitStats = ({ tuit }) => {
         });
     };
 
+    const dislikeTuit = () => {
+        updateTuit(dispatch, {
+            ...tuit,
+            dislikes: !tuit.disliked
+                ? (tuit.dislikes || 0) + 1
+                : (tuit.dislikes || 0) - 1,
+            disliked: !tuit.disliked,
+        });
+    };
+
     return (
         <div className="d-flex">
             <span className="pe-3">
-                {tuit.liked ? (
-                    <i
-                        className="fas fa-heart text-danger"
-                        onClick={likeTuit}
-                    ></i>
-                ) : (
-                    <i className="fas fa-heart" onClick={likeTuit}></i>
-                )}{" "}
-                - {tuit.stats.likes}
+                <i
+                    className={`fas fa-heart ${tuit.liked && "text-danger"}`}
+                    onClick={likeTuit}
+                ></i>{" "}
+                - {tuit.likes || 0}
             </span>
             <span className="pe-3">
-                <i className="fas fa-retweet"></i> - {tuit.stats.retuits}
+                <i className="fas fa-retweet"></i> - {tuit.retuits || 0}
             </span>
             <span className="pe-3">
-                <i className="fas fa-comment"></i> - {tuit.stats.replies}
+                <i className="fas fa-comment"></i> - {tuit.replies || 0}
+            </span>
+            <span className="pe-3">
+                <i
+                    className={`fas fa-thumbs-down ${
+                        tuit.disliked && "text-primary"
+                    }`}
+                    onClick={dislikeTuit}
+                ></i>{" "}
+                - {tuit.dislikes || 0}
             </span>
         </div>
     );

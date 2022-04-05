@@ -5,26 +5,24 @@ import { deleteTuit } from "../actions/tuits-actions";
 
 const TuitListItem = ({ tuit }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({ type: "delete-tuit", tuit });
-    };
-
     return (
         <div className="list-group-item d-flex mb-1">
             <div>
                 <div>
-                    <img
-                        src={tuit["avatar-image"]}
-                        alt="Tuiter user's avatar."
-                        className="wd-tuit-avatar-image"
-                    />
+                    {tuit["avatar-image"] && (
+                        <img
+                            src={tuit["avatar-image"]}
+                            alt="Tuiter user's avatar."
+                            className="wd-tuit-avatar-image"
+                        />
+                    )}
                 </div>
             </div>
             <div className="ps-sm-2 ps-md-3">
                 <div>
                     <div className="wd-tuit-text-small">
                         <span className="wd-tuit-text-bold">
-                            {tuit.postedBy.username || ""}
+                            {(tuit.postedBy && tuit.postedBy.username) || ""}
                             {tuit.verified && (
                                 <i className="fas fa-check-circle ps-1 pe-1"></i>
                             )}
