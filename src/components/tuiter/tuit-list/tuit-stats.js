@@ -1,10 +1,15 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { updateTuit } from "../actions/tuits-actions";
 
 const TuitStats = ({ tuit }) => {
     const dispatch = useDispatch();
     const likeTuit = () => {
-        dispatch({ type: "like-tuit", tuit });
+        updateTuit(dispatch, {
+            ...tuit,
+            likes: !tuit.liked ? tuit.likes + 1 : tuit.likes - 1,
+            liked: !tuit.liked,
+        });
     };
 
     return (

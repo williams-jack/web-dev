@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuit-stats";
+import { deleteTuit } from "../actions/tuits-actions";
 
 const TuitListItem = ({ tuit }) => {
     const dispatch = useDispatch();
@@ -23,15 +24,15 @@ const TuitListItem = ({ tuit }) => {
                 <div>
                     <div className="wd-tuit-text-small">
                         <span className="wd-tuit-text-bold">
-                            {tuit.postedBy.username}
+                            {tuit.postedBy.username || ""}
                             {tuit.verified && (
                                 <i className="fas fa-check-circle ps-1 pe-1"></i>
                             )}
                         </span>
                         <span className="wd-tuit-details">
-                            &nbsp; - @{tuit.handle}{" "}
+                            {tuit.handle && `- @${tuit.handle}`}{" "}
                             <i
-                                onClick={() => deleteTuit(tuit)}
+                                onClick={() => deleteTuit(dispatch, tuit)}
                                 className="fas fa-trash fa-pull-right text-danger wd-tuit-delete-icon"
                             ></i>
                         </span>
