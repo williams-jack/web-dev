@@ -82,7 +82,7 @@ const ExploreComponent = ({ active = "for you" }) => {
             </div>
             <div className="wd-explore-main-content-highlighted-tuit">
                 <img
-                    src="/tuiter/assets/starship.jpg"
+                    src="/assets/starship.jpg"
                     alt="SpaceX's starship spacecraft."
                     className="wd-explore-main-content-image"
                 />
